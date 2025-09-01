@@ -1,0 +1,30 @@
+🌆 CITY PULSE QUICK RESTART COMMANDS
+====================================
+
+🚀 QUICK RESTART (Recommended):
+docker-compose restart
+
+🔄 COMPLETE RESTART (Stops and starts everything):
+docker-compose down && docker-compose up -d
+
+🧹 FRESH RESTART (Cleans everything and starts fresh):
+docker-compose down -v && docker-compose up -d
+
+📊 CHECK STATUS:
+docker-compose ps
+
+🔍 VIEW LOGS:
+docker-compose logs -f frontend    (Frontend logs)
+docker-compose logs -f backend     (Backend logs)
+docker-compose logs -f postgres    (Database logs)
+
+🌐 ACCESS YOUR SITE:
+Frontend: http://localhost:3000
+Backend:  http://localhost:8000
+API Docs: http://localhost:8000/docs
+
+💡 TIPS:
+- Use "docker-compose restart" for quick restarts
+- Use "docker-compose down && docker-compose up -d" for complete restarts
+- Use "docker-compose down -v && docker-compose up -d" if you have issues
+- Check logs if something isn't working
